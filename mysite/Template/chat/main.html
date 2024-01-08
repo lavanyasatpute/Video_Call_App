@@ -7,86 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video_Chat_App</title>
     <style>
-        body {
-            font-family: 'Helvetica', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        h3 {
-            color: #555;
-        }
-
-        #username,
-        #msg {
-            padding: 10px;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: 200px;
-            box-sizing: border-box;
-        }
-
-        #btn-join,
-        #btn-send-msg,
-        #btn-toggel-audio,
-        #btn-toggel-video,
-        #btn-share-screen {
-            padding: 10px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        #btn-join:hover,
-        #btn-send-msg:hover,
-        #btn-toggel-audio:hover,
-        #btn-toggel-video:hover,
-        #btn-share-screen:hover {
-            background-color: #2980b9;
-        }
-
-        .main-grid-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #video-container {
-            padding: 20px;
-        }
-
-        #local-video {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .chat {
-            margin-top: 20px;
-        }
-
-        #messages {
-            max-height: 200px;
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 10px;
-            background-color: #fff;
-        }
-
-        input[type="text"],
-        input[type="button"] {
-            outline: none;
-        }
+        /* Your CSS styles go here */
     </style>
 </head>
 
@@ -113,7 +34,8 @@
             </div>
         </div>
     </div>
-    <!-- <script type="text/javascript" src="{% static js/main.js %}"></script> -->
+    <!-- Corrected 'src' attribute in the script tag -->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>

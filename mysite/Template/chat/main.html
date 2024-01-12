@@ -35,18 +35,20 @@
 
         /* Input and button styles */
         input[type="text"] {
-            padding: 8px;
-            margin-right: 8px;
+            padding: 10px;
+            margin-right: 10px;
             border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         button {
-            padding: 8px 16px;
+            padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             border: none;
             cursor: pointer;
-            margin-top: 8px;
+            margin-top: 10px;
+            border-radius: 5px;
             /* Added margin between input and button */
         }
 
@@ -73,27 +75,27 @@
         /* Video and button styles inside video container */
         video {
             max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 10px;
-            float: left;
+            border-radius: 150px;
+            box-shadow: 0 2px 4px rgba(22, 1, 1, 0.1);
+            margin-bottom: 20px;
             /* Added margin between video and buttons */
         }
 
-        #btn-toggel-audio,
-        #btn-toggel-video,
+        #btn-toggle-audio,
+        #btn-toggle-video,
         #btn-share-screen {
-            padding: 8px;
+            padding: 10px;
             background-color: #007bff;
             color: #fff;
             border: none;
             cursor: pointer;
-            margin-top: 8px;
+            margin-top: 10px;
+            border-radius: 5px;
             /* Added margin between buttons */
         }
 
-        #btn-toggel-audio:hover,
-        #btn-toggel-video:hover,
+        #btn-toggle-audio:hover,
+        #btn-toggle-video:hover,
         #btn-share-screen:hover {
             background-color: #0056b3;
         }
@@ -112,22 +114,25 @@
             padding: 0;
             max-height: 200px;
             overflow-y: auto;
+            margin-bottom: 20px;
         }
 
         /* Message input and button styles */
         #msg {
-            padding: 8px;
-            margin-right: 8px;
+            padding: 10px;
+            margin-right: 10px;
             border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         #btn-send-msg {
-            padding: 8px 16px;
+            padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             border: none;
             cursor: pointer;
-            margin-top: 8px;
+            margin-top: 10px;
+            border-radius: 5px;
             /* Added margin between input and button */
         }
 
@@ -145,8 +150,8 @@
     <div class="main-grid-container">
         <div id="video-container">
             <video id="local-video" autoplay playsinline></video>
-            <button type="button" id="btn-toggel-audio">Audio Mute</button>
-            <button type="button" id="btn-toggel-video">Video off</button>
+            <button type="button" id="btn-toggle-audio">Audio Mute</button>
+            <button type="button" id="btn-toggle-video">Video off</button>
 
             <div class="chat">
                 <h3>CHAT</h3>
@@ -160,7 +165,6 @@
             </div>
         </div>
     </div>
-    <!-- Corrected 'src' attribute in the script tag -->
     <script src="{% static 'js/main.js' %}"></script>
 </body>
 
